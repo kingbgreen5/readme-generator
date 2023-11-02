@@ -44,9 +44,10 @@ function init() {
             name: 'projdesc',
           },
           {
-            type: 'input',
+            type: 'list',
             message: questions[4],
             name: 'lisc',
+            choices: ['MIT','APACHE 2.0','GPL 3.0','BSD 3', 'NONE']
           },
           {
             type: 'input',
@@ -83,11 +84,22 @@ function init() {
 
 
 function writeToFile(fileName, data) {
+
+if (data.lisc== 'MIT'){
+    badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'  ;
+}else if (data.lisc== 'APACHE 2.0' ){
+    badge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+}else if (data.lisc== 'GPL 3.0' ){
+    badge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+}else if (data.lisc== 'BSD 3' ){
+    badge = '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)'
+}
+
     var data = 
     `# ${data.projname}
 
 ## Description: 
-
+${badge}
 ${data.projdesc}
 
 
@@ -114,6 +126,10 @@ ${data.userknowlege}
 ## License 
 ${data.lisc}
 
+
+
+
+
 ## Contributing 
 ${data.repoknowledge}
 
@@ -125,10 +141,6 @@ ${data.tests}
 Find Me on GitHub: https://github.com/${data.username}
 
 Reach out to me with questions at ${data.email}
-
-
-
-
 
 `
 
@@ -155,8 +167,10 @@ init();                                         // Runs everything on startup
 
 
 // GIVEN a command-line application that accepts user input
+
 // WHEN I am prompted for information about my application repository
-// THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+// THEN a high-quality, professional README.md is generated with the title of my project and sections 
+// entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 // WHEN I enter my project title
 // THEN this is displayed as the title of the README
 // WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
