@@ -1,8 +1,8 @@
-# Readme Generator Project
+# 
 
 ## Description: 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This project generates a Readme, How neat.
 
 
 ## Table of Contents 
@@ -21,25 +21,26 @@ VI. Questions
 
 ## Installation
 
+
 ## Usage
-dont use it
+
 
 ## License 
-none yet
+MIT
+
+
+
+
 
 ## Contributing 
-dont
+
 
 ## Tests 
-npm test
+
 
 ## Questions
 
-Find Me on GitHub Kingb
+Find Me on GitHub: https://github.com/
 
-Reach out to me with questions at thebeakeh
-
-
-
-
+Reach out to me with questions at 
 
