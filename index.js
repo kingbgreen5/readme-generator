@@ -11,7 +11,7 @@ const fs = require ('fs')
 // TODO: Create an array of questions for user input
 const questions = ['What is your GitHub username?','What is your email adress?',
 'What is your projects name?','Please write a short description of your project?',
- 'What kind of license should your project have?', 
+'What kind of license should your project have?', 
 'What command should be run to install dependencies?',
 'What command should be run to run tests?',
 'What does the user need to know about using the repo?',
@@ -96,26 +96,25 @@ if (data.lisc== 'MIT'){
 }
 
     var data = 
-    `# ${data.projname}
+    `# ${data.projname}       ${badge}
 
 ## Description: 
-${badge}
 ${data.projdesc}
 
 
 ## Table of Contents 
 
-I. Installation
+I. [Installation](#installation)
 
-II. Usage
- 
-III. License
+II. [Usage](#usage)
 
-IV. Contributing
+III. [License](#license)
 
-V. Tests
+IV. [Contributing](#contributing)
 
-VI. Questions
+V. [Tests](#test)
+
+VI. [Questions](#questions)
 
 ## Installation
 ${data.dependencies}
