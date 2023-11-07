@@ -126,10 +126,6 @@ ${data.userknowlege}
 ## License 
 ${data.lisc}
 
-
-
-
-
 ## Contributing 
 ${data.repoknowledge}
 
