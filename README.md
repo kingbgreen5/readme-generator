@@ -12,7 +12,7 @@ Run  'npm i'  to install dependencies.
 ## Usage
 Input 'npm start'  to initiate the program.
 
-![Image of the website](./assets/Screenshot.png)
+![Image of the website](./Assets/Screenshot.png)
 
 
 =======
